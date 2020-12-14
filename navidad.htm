@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Feliz Navidad !!!</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("img/background3.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bg">
+<div class="container">
+<br><br>
+  <div class="row justify-content-md-center">
+	<div class="col-md-auto"><img src="cartas/Carta1_On.png" id="Carta1" class="rounded float-start" alt="..." onclick="image1()"></div>
+	<div class="col-md-auto"><img src="cartas/Carta2_On.png" id="Carta2" class="rounded float-start" alt="..." onclick="image2()"></div>
+	<div class="col-md-auto"><img src="cartas/Carta3_On.png" id="Carta3" class="rounded float-start" alt="..." onclick="image3()"></div>
+	<div class="col-md-auto"><img src="cartas/Carta4_On.png" id="Carta4" class="rounded float-start" alt="..." onclick="image4()"></div>
+  </div>
+<br>
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto"><img src="cartas/Carta5_On.png" id="Carta5" class="rounded float-start" alt="..." onclick="image5()"></div>
+    <div class="col-md-auto"><img src="cartas/Carta6_On.png" id="Carta6" class="rounded float-start" alt="..." onclick="image6()"></div>
+    <div class="col-md-auto"><img src="cartas/Carta7_On.png" id="Carta7" class="rounded float-start" alt="..." onclick="image7()"></div>
+  </div>
+</div>
+</div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
+</body>
+<script>
+  function image1() {
+      var Image_Id = document.getElementById('Carta1');
+      if (Image_Id.src.match("cartas/Carta1_On.png")) {
+          Image_Id.src = "cartas/Carta1_Off.png";
+          document.getElementById("img01").src = "regalos/regalo1.png";
+          document.getElementById("modal01").style.display = "block";
+      }
+      else {
+          Image_Id.src = "cartas/Carta1_On.png";
+      }
+  }
+  function image2() {
+      var Image_Id = document.getElementById('Carta2');
+      if (Image_Id.src.match("cartas/Carta2_On.png")) {
+          Image_Id.src = "cartas/Carta2_Off.png";
+          document.getElementById("img01").src = "regalos/regalo2.png";
+          document.getElementById("modal01").style.display = "block";
+      }
+      else {
+          Image_Id.src = "cartas/Carta2_On.png";
+      }
+  }
+  function image3() {
+      var Image_Id = document.getElementById('Carta3');
+      if (Image_Id.src.match("cartas/Carta3_On.png")) {
+          Image_Id.src = "cartas/Carta3_Off.png";
+          document.getElementById("img01").src = "regalos/regalo3.png";
+          document.getElementById("modal01").style.display = "block";
+      }
+      else {
+          Image_Id.src = "cartas/Carta3_On.png";
+      }
+  }
+  function image4() {
+      var Image_Id = document.getElementById('Carta4');
+      if (Image_Id.src.match("cartas/Carta4_On.png")) {
+          Image_Id.src = "cartas/Carta4_Off.png";
+          document.getElementById("img01").src = "regalos/regalo4.png";
+          document.getElementById("modal01").style.display = "block";
+      }
+      else {
+          Image_Id.src = "cartas/Carta4_On.png";
+      }
+  }
+  function image5() {
+      var Image_Id = document.getElementById('Carta5');
+      if (Image_Id.src.match("cartas/Carta5_On.png")) {
+          Image_Id.src = "cartas/Carta5_Off.png";
+          document.getElementById("img01").src = "regalos/regalo5.png";
+          document.getElementById("modal01").style.display = "block";
+      }
+      else {
+          Image_Id.src = "cartas/Carta5_On.png";
+      }
+  }
+  function image6() {
+      var Image_Id = document.getElementById('Carta6');
+      if (Image_Id.src.match("cartas/Carta6_On.png")) {
+          Image_Id.src = "cartas/Carta6_Off.png";
+          document.getElementById("img01").src = "regalos/regalo6.png";
+          document.getElementById("modal01").style.display = "block";
+      }
+      else {
+          Image_Id.src = "cartas/Carta6_On.png";
+      }
+  }
+  function image7() {
+      var Image_Id = document.getElementById('Carta7');
+      if (Image_Id.src.match("cartas/Carta7_On.png")) {
+          Image_Id.src = "cartas/Carta7_Off.png";
+          document.getElementById("img01").src = "regalos/regalo7.png";
+          document.getElementById("modal01").style.display = "block";
+      }
+      else {
+          Image_Id.src = "cartas/Carta7_On.png";
+      }
+  }        
+</script>
+</html>
